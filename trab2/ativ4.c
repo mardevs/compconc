@@ -17,13 +17,8 @@ pthread_cond_t x_cond;
 
 // Thread A
 void *A (void *t) {
-  //int boba1, boba2;
+  printf("A: Comecei\n");
 
-  // printf("A: Comecei\n");
-  
-  /* faz alguma coisa pra gastar tempo... */
-  //boba1=10000; boba2=-10000; while (boba2 < boba1) boba2++;
-  
   printf("tudo bem?\n");
 
   pthread_mutex_lock(&x_mutex);
@@ -40,12 +35,7 @@ void *A (void *t) {
 // Thread B
 
 void *B (void *t) {
-  //int boba1, boba2;
-
-  // printf("B: Comecei\n");
-  
-  /* faz alguma coisa pra gastar tempo... */
-  //boba1=10000; boba2=-10000; while (boba2 < boba1) boba2++;
+  printf("B: Comecei\n");
   
   printf("bom dia!\n");
 
@@ -62,7 +52,7 @@ void *B (void *t) {
 
 // Thread C
 void *C (void *t) {
-  //printf("C: Comecei\n");
+  printf("C: Comecei\n");
 
   pthread_mutex_lock(&x_mutex);
   if (x < 2) { 
@@ -78,7 +68,7 @@ void *C (void *t) {
 // Thread D
 
 void *D (void *t) {
-  //printf("D: Comecei\n");
+  printf("D: Comecei\n");
 
   pthread_mutex_lock(&x_mutex);
   if (x < 2) { 
