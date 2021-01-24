@@ -1,3 +1,10 @@
+/* Disciplina: Computacao Concorrente */
+/* Prof.: Silvana Rossetto */
+/* Nome: Domenica Maria Cioci Ferreira Gonçalves */
+/* Laboratório: 6 */
+/* Codigo: Implementação de um programa concorrente em Java para soma de dois vetores */
+/* -------------------------------------------------------------------*/
+
 class Vetor {
     private double[] vet;
 
