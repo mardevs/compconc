@@ -37,10 +37,6 @@ void* le(void* args) {
         // le ...
         printf("L%d lendo ...\n", id);
 
-        if(e_count > 0) {
-            printf("Erro: L%d leu enquanto escritores estavam escrevendo\n");
-        }
-
         // Simulando leitura
         double boba = id;
         for(int i = 0; i < 100; i++) boba /= 2;
@@ -80,13 +76,6 @@ void* escreve(void* args) {
         // escreve ...
         printf("E%d escrevendo ...\n", id);
 
-        if(e_count > 1) {
-            printf("Erro: E%d escreveu enquanto escritores estavam escrevendo\n");
-        }
-
-        if(l_count > 0) {
-            printf("Erro: E%d escreveu enquanto leitores estavam lendo\n");
-        }
         // Simulando escrita
         double boba = id;
         for(int i = 0; i < 100; i++) boba /= 2;
